@@ -35,28 +35,13 @@
 
 ## Quick start
 
-Copy any fenced drawing from [mdxcn.dev](https://mdxcn.dev) into a note, inside an `mdx` fence:
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/assets/quickstart-dark.svg"><img src="docs/assets/quickstart-light.svg" alt="On the left, a note holding the pasted mdxcn fence; on the right, the figure Obsidian draws from it, its bars rising" width="100%"></picture></p>
 
-````markdown
-```mdx
-+------------------- [ LAUNCH ] -------------------+
-|                                                  |
-| design  ████████----------------                 |
-| build   -----███████░░░░░░------                 |
-| docs    -------------██░░░░░░░--                 |
-| ship    --------------------████                 |
-|         q1     q2      q3     q4                 |
-|                                                  |
-+--------------------------------------------------+
-```
-````
+1. On [mdxcn.dev](https://mdxcn.dev), open a component and copy its fenced drawing (the **.md** tab).
+2. Paste it in a note, inside an `` ```mdx `` fence.
+3. Obsidian draws the live figure: dotted frame, `+` corners, `[ TITLE ]`, the accent on the current row, the fade-up when it scrolls into view. Reading view and Live Preview alike.
 
-…and Obsidian draws the live figure: dotted frame, `+` corners, `[ TITLE ]`, the accent on the current row, the fade-up when it scrolls into view. Reading view and Live Preview alike.
-
-<p align="center">
-  <img src="docs/screenshots/reading-light.png" alt="The showcase note in Obsidian, light theme" width="49%">
-  <img src="docs/screenshots/reading-dark.png" alt="The showcase note in Obsidian, dark theme" width="49%">
-</p>
+Rather start from scratch? Type `::gantt` at the start of a line, or open the [picker](#insert-a-component-in-two-keystrokes).
 
 > [!TIP]
 > No language at all? A plain ` ``` ` fence that holds an mdxcn frame renders too (setting *Render plain fences*, on by default). Notes written for GitHub stay readable everywhere, and look native in Obsidian.
@@ -176,7 +161,7 @@ Nobody should type a frame by hand. Pick a component, get a filled-in template, 
 | Right-click in the editor | *Insert mdxcn component…*, and *Convert* when the cursor is in a block |
 | **MDXCN: Create a gallery note** | a note with all 47 components, ready to copy from |
 
-<p align="center"><img src="docs/screenshots/picker-dark.png" alt="The component picker with a live preview" width="88%"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/assets/picker-dark.svg"><img src="docs/assets/picker-light.svg" alt="The picker: a search field, the list of components with the chosen one highlighted, and its live preview" width="90%"></picture></p>
 
 When the cursor is already inside an `mdx` block, only the inner part is inserted, and the fence is lengthened (```` ```` ````) if the template carries its own code fence.
 

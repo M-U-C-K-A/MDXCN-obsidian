@@ -12,7 +12,7 @@
     "preview:build": "esbuild dev/preview.ts --bundle --format=iife --alias:obsidian=./dev/obsidian-shim.ts --outfile=dev/.out/preview.js --log-level=warning",
     "preview": "npm run preview:build && python3 -m http.server 4317",
     "install-plugin": "npm run build && node scripts/install.mjs",
-    "docs": "node docs/svg/build.mjs && esbuild scripts/docs.ts --bundle --platform=node --format=esm --outfile=scripts/.out/docs.mjs --log-level=warning && node scripts/.out/docs.mjs"
+    "docs": "node docs/svg/build.mjs && node docs/svg/hairline.mjs && esbuild scripts/docs.ts --bundle --platform=node --format=esm --outfile=scripts/.out/docs.mjs --log-level=warning && node scripts/.out/docs.mjs"
   },
   "keywords": [
     "obsidian",
