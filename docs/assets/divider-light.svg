@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 28" width="1280" height="28" role="img" aria-label="divider">
+  <style>.run { animation: run 2.4s linear infinite } @keyframes run { to { stroke-dashoffset: -14 } } @media (prefers-reduced-motion: reduce) { .run { animation: none } }</style>
+  <line class="run" x1="24" y1="14" x2="1256" y2="14" stroke="#8390b4" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="2 5"/>
+  <text x="12" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" fill="#8390b4" opacity=".7">+</text>
+  <text x="1258" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" fill="#8390b4" opacity=".7">+</text>
+</svg>

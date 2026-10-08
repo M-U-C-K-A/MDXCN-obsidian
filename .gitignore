@@ -1,0 +1,13 @@
+node_modules/
+main.js
+*.map
+.DS_Store
+data.json
+test/.out/
+dev/.out/
+demo-vault/.obsidian/plugins/
+demo-vault/.obsidian/workspace*.json
+scripts/.out/
+dev/readme.html
+.claude/
+dist/

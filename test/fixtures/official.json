@@ -1,0 +1,516 @@
+{
+ "ascii": [
+  {
+   "name": "callout",
+   "tag": "Callout",
+   "slug": "callout",
+   "ascii": "+----------------------- [ WARNING ] -----------------------+\n|                                                           |\n| !  The CLI copies files into `registry/default`. Edit the |\n|    source — there is nothing to update later.             |\n|                                                           |\n+-----------------------------------------------------------+"
+  },
+  {
+   "name": "quote",
+   "tag": "Quote",
+   "slug": "quote",
+   "ascii": "+----------------------------------------------------------+\n|                                                          |\n| “  A thousand barely audible voices all singing in tune. |\n|                                                          |\n| —  Paul Graham  Taste for Makers                         |\n|                                                          |\n+----------------------------------------------------------+"
+  },
+  {
+   "name": "steps",
+   "tag": "Steps",
+   "slug": "steps",
+   "ascii": "+------------------ [ INSTALL ] -------------------+\n|                                                  |\n| 1  Copy the source                               |\n|    Run the shadcn CLI.                           |\n| │                                                |\n| 2  Register it                                   |\n|    Add it to the components map.                 |\n| │                                                |\n| 3  Write                                         |\n|    Use it between paragraphs.                    |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "terminal",
+   "tag": "Terminal",
+   "slug": "terminal",
+   "ascii": "+------------------- [ SHELL ] --------------------+\n|                                                  |\n| $ pnpm dlx shadcn@latest add @mdxcn/all          |\n| ✓ 51 files written                               |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "changelog",
+   "tag": "Changelog",
+   "slug": "changelog",
+   "ascii": "+----------------------- [ 1.3.0 ] ------------------------+\n|                                                          |\n| 1.3.0  Oct 02                                            |\n|                                                          |\n| +  added    Board, Score, Chat, Env, Endpoint, Keys, FAQ |\n| ~  changed  Every graph reads Markdown children          |\n| *  fixed    Overridden tags in mdx-components            |\n|                                                          |\n+----------------------------------------------------------+"
+  },
+  {
+   "name": "annotate",
+   "tag": "Annotate",
+   "slug": "annotate",
+   "ascii": "+------------------ [ RETRY.PY ] ------------------+\n|                                                  |\n| [1]  def fetch(url, times=3):                    |\n|          for attempt in range(times):            |\n|              try:                                |\n|                  return get(url)                 |\n| [2]          except TimeoutError:                |\n|                  sleep(2 ** attempt)             |\n|                                                  |\n| [1]  Three tries.                                |\n| [2]  Only timeouts retry.                        |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "decision",
+   "tag": "Decision",
+   "slug": "decision",
+   "ascii": "+------------------ [ DATABASE ] ------------------+\n|                                                  |\n| accepted  Mar 12                                 |\n|                                                  |\n| ●  Postgres  we already run it                   |\n| ×  Mongo     no joins we trust                   |\n| ○  SQLite    fine until the second writer        |\n|                                                  |\n| Revisit if writes pass 2k a second.              |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "chat",
+   "tag": "Chat",
+   "slug": "chat",
+   "ascii": "+------------------ [ SESSION ] -------------------+\n|                                                  |\n| >  you    which graph shows a rollback?          |\n|                                                  |\n|    agent  Timeline. Bold the rollback row.       |\n|                                                  |\n| >  you    and on GitHub?                         |\n|                                                  |\n|    agent  Paste the fenced ASCII.                |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "env",
+   "tag": "Env",
+   "slug": "env",
+   "ascii": "+-------------------- [ .ENV ] --------------------+\n|                                                  |\n| *  DATABASE_URL  postgres://localhost:5432/app   |\n|    Postgres connection string.                   |\n|                                                  |\n|    ANALYTICS_ID  —                               |\n|    Leave empty to turn analytics off             |\n|                                                  |\n| * required                                       |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "endpoint",
+   "tag": "Endpoint",
+   "slug": "endpoint",
+   "ascii": "+------------------ [ ENDPOINT ] ------------------+\n|                                                  |\n| GET  /api/v1/components/:slug                    |\n| One component from the catalog.                  |\n|                                                  |\n| *  slug  string  Registry slug                   |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "keys",
+   "tag": "Keys",
+   "slug": "keys",
+   "ascii": "+----------------- [ SHORTCUTS ] ------------------+\n|                                                  |\n| [⌘][K]            search the docs                |\n| [Ctrl][Shift][P]  command palette                |\n| [g] then [d]      go to docs                     |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "faq",
+   "tag": "Faq",
+   "slug": "faq",
+   "ascii": "+-------------------- [ FAQ ] ---------------------+\n|                                                  |\n| ?  Is this an npm package?                       |\n|    No. The CLI copies the source.                |\n|                                                  |\n| ?  Does it need MDX?                             |\n|    No. Comark reads blocks from plain .md.       |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "timeline",
+   "tag": "GraphTimeline",
+   "slug": "graph-timeline",
+   "ascii": "+------------------ [ SHIPPED ] -------------------+\n|                                                  |\n| ●  Mar 12  CLI copies the files                  |\n| │                                                |\n| ●  Mar 18  Docs, live previews                   |\n| │                                                |\n| ○  Apr 02  Registry listed                       |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "tree",
+   "tag": "GraphTree",
+   "slug": "graph-tree",
+   "ascii": "+------------------ [ REGISTRY ] ------------------+\n|                                                  |\n| registry/default                                 |\n| ├─ graph-frame                                   |\n| │  ├─ graph-frame.tsx  ui                        |\n| │  └─ graph-motion.ts  lib                       |\n| └─ graph-tree                                    |\n|    └─ graph-tree.tsx   ui                        |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "gantt",
+   "tag": "GraphGantt",
+   "slug": "graph-gantt",
+   "ascii": "+------------------- [ LAUNCH ] -------------------+\n|                                                  |\n|                      ▾                           |\n| design  ████████----------------                 |\n| build   -----███████░░░░░░------                 |\n| docs    -------------██░░░░░░░--                 |\n| ship    --------------------░░░░                 |\n|         q1     q2      q3     q4                 |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "board",
+   "tag": "GraphBoard",
+   "slug": "graph-board",
+   "ascii": "+------------------- [ ROADMAP ] --------------------+\n|                                                    |\n| Now  2               | Next  2      | Later  1     |\n| -------------------- | ------------ | ------------ |\n| ● Children for every | - Board      | - Figma kit  |\n|   graph              | - Score      |              |\n| - Comark parity      |              |              |\n|                                                    |\n+----------------------------------------------------+"
+  },
+  {
+   "name": "stat",
+   "tag": "GraphStat",
+   "slug": "graph-stat",
+   "ascii": "+----------------- [ THIS WEEK ] ------------------+\n|                                                  |\n| 12,400   4,100    860                            |\n| docs     copies   shipped                        |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "spec",
+   "tag": "GraphSpec",
+   "slug": "graph-spec",
+   "ascii": "+-------------------- [ TYPE ] --------------------+\n|                                                  |\n| Family    Geist Mono                             |\n| Size      14 / 21                                |\n| Tracking  +0.02em                                |\n| Figures   tabular                                |\n| Accent    --graph-accent                         |\n| Duo       --graph-accent-2                       |\n| Tri       --graph-accent-3                       |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "check",
+   "tag": "GraphCheck",
+   "slug": "graph-check",
+   "ascii": "+------------------- [ LAUNCH ] -------------------+\n|                                                  |\n| [x]  freeze tokens                               |\n| [x]  ship registry json                          |\n| [ ]  write the postmortem  still open            |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "diff",
+   "tag": "GraphDiff",
+   "slug": "graph-diff",
+   "ascii": "+------------------- [ BUNDLE ] -------------------+\n|                                                  |\n|   vendor       84 kb                             |\n| + app          31 kb                             |\n| - sourcemaps   12 kb                             |\n| --------------------                             |\n|   shipped     103 kb                             |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "kpi",
+   "tag": "GraphKpi",
+   "slug": "graph-kpi",
+   "ascii": "+------------------- [ READS ] --------------------+\n|                                                  |\n| 12,400                                           |\n| this week  +18%                                  |\n| ▃▄▄▄▅▅▆▅▇▆▇█                                     |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "table",
+   "tag": "GraphTable",
+   "slug": "graph-table",
+   "ascii": "+----------- [ WHAT THE RESEARCH COST ] ------------+\n|                                                   |\n| Agent               |  Tokens | Tool calls | Time |\n| --------------------+---------+------------+----- |\n| Inks and paper      | 115,207 |        120 |  16m |\n| Overprint and drift | 135,218 |        164 |  16m |\n| Naming the patterns | 186,716 |        112 |  18m |\n| --------------------+---------+------------+----- |\n| Total               | 437,141 |        396 | ~50m |\n|                                                   |\n+---------------------------------------------------+"
+  },
+  {
+   "name": "sheet",
+   "tag": "GraphSheet",
+   "slug": "graph-sheet",
+   "ascii": "+-------------------- [ RFC ] ---------------------+\n|                                                  |\n| Item             | Owner | Status                |\n| -----------------+-------+-------                |\n| Scope                                            |\n| CLI copies files | priya | done                  |\n| Docs previews    | jon   | now                   |\n| -----------------+-------+-------                |\n| Out of scope                                     |\n| npm package      | —     | later                 |\n| Figma kit        | —     | later                 |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "compare",
+   "tag": "GraphCompare",
+   "slug": "graph-compare",
+   "ascii": "+------------------- [ PLANS ] --------------------+\n|                                                  |\n|                | Solo | Studio                   |\n| ---------------+------+-------                   |\n| Registry       |    ✓ |      ✓                   |\n| Accent picker  |    ✓ |      ✓                   |\n| Private source |    – |      ✓                   |\n| Price          |   $0 |    $24                   |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "matrix",
+   "tag": "GraphMatrix",
+   "slug": "graph-matrix",
+   "ascii": "+------------------- [ DETECT ] -------------------+\n|                                                  |\n|     | Pos | Neg                                  |\n| ----+-----+----                                  |\n| Pos |  41 |   3                                  |\n| Neg |   2 |  54                                  |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "invoice",
+   "tag": "GraphInvoice",
+   "slug": "graph-invoice",
+   "ascii": "+---------------- [ INVOICE 0041 ] ----------------+\n|                                                  |\n| FROM                    BILL TO                  |\n| mdxcn                   Acme Studio              |\n| kshv.me                 14 Market Street         |\n| GSTIN 29AXXXXX1234Z5    San Francisco, CA        |\n|                                                  |\n| No.   Issued        Due                          |\n| 0041  Mar 12, 2026  Apr 11, 2026                 |\n|                                                  |\n| Description   | Qty |  Rate | Amount             |\n| --------------+-----+-------+-------             |\n| Design system |   1 | 4,200 |  4,200             |\n| Motion pass   |   1 | 1,800 |  1,800             |\n| Docs rewrite  |  8h |   180 |  1,440             |\n| --------------+-----+-------+-------             |\n|                    Subtotal    7,440             |\n|                    Tax             0             |\n|                    Amount due  7,440             |\n|                                                  |\n| Net 30. Wire to the account on file.             |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "rank",
+   "tag": "GraphRank",
+   "slug": "graph-rank",
+   "ascii": "+------------------- [ ROUTES ] -------------------+\n|                                                  |\n| /docs     [====================]  12,400         |\n| /install  [=======-------------]   4,100         |\n| /plot     [=-------------------]     860         |\n| /rank     [=-------------------]     420         |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "funnel",
+   "tag": "GraphFunnel",
+   "slug": "graph-funnel",
+   "ascii": "+------------------ [ INSTALL ] -------------------+\n|                                                  |\n| docs  ████████████████████  12,400               |\n| copy  ███████-------------   4,100   33%         |\n| ship  █-------------------     860    7%         |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "slope",
+   "tag": "GraphSlope",
+   "slug": "graph-slope",
+   "ascii": "+------------------ [ TRAFFIC ] -------------------+\n|                                                  |\n|        2025       2026                           |\n| docs  8,200  →  12,400                           |\n| copy  5,100  →   4,100                           |\n| ship    640  →     860                           |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "bullet",
+   "tag": "GraphBullet",
+   "slug": "graph-bullet",
+   "ascii": "+------------------- [ BUDGET ] -------------------+\n|                                                  |\n| Design  [===================|]  42 / 40          |\n| Motion  [===============----|]  18 / 24          |\n| Docs    [===============----|]   9 / 12          |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "score",
+   "tag": "GraphScore",
+   "slug": "graph-score",
+   "ascii": "+------------------- [ REVIEW ] -------------------+\n|                                                  |\n| Performance    ●●●●○  4/5                        |\n| Accessibility  ●●●●●  5/5                        |\n| Docs           ●●◐○○  2.5/5                      |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "waterfall",
+   "tag": "GraphWaterfall",
+   "slug": "graph-waterfall",
+   "ascii": "+------------------- [ MARGIN ] -------------------+\n|                                                  |\n| Revenue  ████████████████████████  48            |\n| Refunds  ---------------------███  −6            |\n| Hosting  -------------------██---  −4            |\n| -------------------------------------            |\n| Profit   ███████████████████-----  38            |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "stack",
+   "tag": "GraphStack",
+   "slug": "graph-stack",
+   "ascii": "+------------------- [ BUNDLE ] -------------------+\n|                                                  |\n| marketing  ████████████▓▓▓▓▓▒▒▒▒▒▒▒              |\n| docs       ███████▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒              |\n|                                                  |\n| █ js  ▓ css  ▒ images                            |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "spark",
+   "tag": "GraphSpark",
+   "slug": "graph-spark",
+   "ascii": "+------------------ [ LATENCY ] -------------------+\n|                                                  |\n| ▂▃▄▃▅▅▇▆▇▅█▇                                     |\n| last point is the accent                         |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "meter",
+   "tag": "GraphMeter",
+   "slug": "graph-meter",
+   "ascii": "+------------------ [ SHIPPED ] -------------------+\n|                                                  |\n| [=========-----]  67%                            |\n| characters, not a progress bar                   |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "waffle",
+   "tag": "GraphWaffle",
+   "slug": "graph-waffle",
+   "ascii": "+------------------ [ COVERAGE ] ------------------+\n|                                                  |\n| █ █ █ █ █ █ █ █ █ █                              |\n| █ █ █ █ █ █ █ █ █ █                              |\n| █ █ █ █ █ █ █ █ █ █                              |\n| █ █ █ █ █ █ █ █ █ █                              |\n| █ █ █ █ █ █ █ █ █ █                              |\n| █ █ █ █ █ █ █ █ █ █                              |\n| █ █ █ █ █ █ █ █ █ █                              |\n| █ █ █ ░ ░ ░ ░ ░ ░ ░                              |\n| ░ ░ ░ ░ ░ ░ ░ ░ ░ ░                              |\n| ░ ░ ░ ░ ░ ░ ░ ░ ░ ░                              |\n| 73%                                              |\n| 73 of 100 tests green                            |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "cells",
+   "tag": "GraphCells",
+   "slug": "graph-cells",
+   "ascii": "+------------- [ TWO WAYS TO LEARN ] --------------+\n|                                                  |\n| █ · █ · ·   █ █ █ █ █                            |\n| · █ · █ ·   █ █ █ █ █                            |\n| █ · · · █   █ █ █ █ █                            |\n| fragments   a system                             |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "bars",
+   "tag": "GraphBars",
+   "slug": "graph-bars",
+   "ascii": "+----------------- [ THROUGHPUT ] -----------------+\n|                                                  |\n| █ █ █ █ █             █                          |\n| █ █ █ █ █         █   █                          |\n|                   █   █                          |\n|                   █ █ █                          |\n|                 █ █ █ █ █                        |\n|                 █ █ █ █ █                        |\n|                 █ █ █ █ █                        |\n|            -->  █ █ █ █ █                        |\n| before          after                            |\n|                                                  |\n+--------------------------------------------------+"
+  },
+  {
+   "name": "uptime",
+   "tag": "GraphUptime",
+   "slug": "graph-uptime",
+   "ascii": "+-------------------- [ API ] ---------------------+\n|                                                  |\n| ██████████████████▒███████████                   |\n| ███████████··█████████████████                   |\n| ▒█████████████████████████████                   |\n| 96%  Jun 1  Aug 29                               |\n| █ up  ▒ slow  · down                             |\n|                                                  |\n+--------------------------------------------------+"
+  }
+ ],
+ "comark": [
+  {
+   "name": "callout",
+   "tag": "Callout",
+   "slug": "callout",
+   "source": "::callout\n---\ntype: warning\n---\nThe CLI copies files into `registry/default`. Edit the source — there is nothing to update later.\n::"
+  },
+  {
+   "name": "quote",
+   "tag": "Quote",
+   "slug": "quote",
+   "source": "::quote\n---\nby: \"Paul Graham\"\nsource: \"Taste for Makers\"\n---\nA thousand barely audible voices all singing in tune.\n::"
+  },
+  {
+   "name": "steps",
+   "tag": "Steps",
+   "slug": "steps",
+   "source": "::steps\n---\ntitle: INSTALL\n---\n1. Copy the source\n\n   Run the shadcn CLI.\n\n2. **Register it**\n\n   Add it to the components map.\n\n3. *Write*\n\n   Use it between paragraphs.\n::"
+  },
+  {
+   "name": "terminal",
+   "tag": "Terminal",
+   "slug": "terminal",
+   "source": "::terminal\n---\ntitle: SHELL\n---\n```\n$ pnpm dlx shadcn@latest add @mdxcn/all\n✓ 51 files written\n```\n::"
+  },
+  {
+   "name": "changelog",
+   "tag": "Changelog",
+   "slug": "changelog",
+   "source": "::changelog\n---\nversion: \"1.3.0\"\ndate: \"Oct 02\"\n---\n- added: Board, Score, Chat, Env, Endpoint, Keys, FAQ\n- changed: Every graph reads Markdown children\n- fixed: Overridden tags in mdx-components\n::"
+  },
+  {
+   "name": "annotate",
+   "tag": "Annotate",
+   "slug": "annotate",
+   "source": "::annotate\n---\ntitle: \"retry.py\"\n---\n```python\ndef fetch(url, times=3):  # (1)\n    for attempt in range(times):\n        try:\n            return get(url)\n        except TimeoutError:  # (2)\n            sleep(2 ** attempt)\n```\n\n1. Three tries.\n2. Only timeouts retry.\n::"
+  },
+  {
+   "name": "decision",
+   "tag": "Decision",
+   "slug": "decision",
+   "source": "::decision\n---\ntitle: DATABASE\nstatus: accepted\ndate: \"Mar 12\"\n---\n- **Postgres** — we already run it\n- *Mongo* — no joins we trust\n- SQLite — fine until the second writer\n\nRevisit if writes pass 2k a second.\n::"
+  },
+  {
+   "name": "chat",
+   "tag": "Chat",
+   "slug": "chat",
+   "source": "::chat\n---\ntitle: SESSION\n---\n- you: which graph shows a rollback?\n- agent: Timeline. Bold the rollback row.\n- you: and on GitHub?\n- agent: Paste the fenced ASCII.\n::"
+  },
+  {
+   "name": "env",
+   "tag": "Env",
+   "slug": "env",
+   "source": "::env\n```bash\n# Postgres connection string. Required.\nDATABASE_URL=postgres://localhost:5432/app\n\n# Leave empty to turn analytics off\nANALYTICS_ID=\n```\n::"
+  },
+  {
+   "name": "endpoint",
+   "tag": "Endpoint",
+   "slug": "endpoint",
+   "source": "::endpoint\nGET /api/v1/components/:slug\n\nOne component from the catalog.\n\n| Param | Type | |\n| --- | --- | --- |\n| **slug** | string | Registry slug |\n::"
+  },
+  {
+   "name": "keys",
+   "tag": "Keys",
+   "slug": "keys",
+   "source": "::keys\n---\ntitle: SHORTCUTS\n---\n- **⌘K: search the docs**\n- Ctrl+Shift+P: command palette\n- g then d: go to docs\n::"
+  },
+  {
+   "name": "faq",
+   "tag": "Faq",
+   "slug": "faq",
+   "source": "::faq\n### Is this an npm package?\n\nNo. The CLI copies the source.\n\n### Does it need MDX?\n\nNo. Comark reads blocks from plain .md.\n::"
+  },
+  {
+   "name": "flow",
+   "tag": "GraphFlow",
+   "slug": "graph-flow",
+   "source": "::graph-flow\n---\ntitle: \"OPTIMISTIC UI\"\nrows:\n  - nodes:\n      - { label: tap }\n      - { label: server }\n      - { label: update }\n  - nodes:\n      - { label: tap }\n      - { label: update, tone: accent }\n      - { label: \"server syncs\", stretch: true, tone: muted }\n---\n::"
+  },
+  {
+   "name": "timeline",
+   "tag": "GraphTimeline",
+   "slug": "graph-timeline",
+   "source": "::graph-timeline\n---\ntitle: SHIPPED\nevents:\n  - { date: \"Mar 12\", label: \"CLI copies the files\" }\n  - { date: \"Mar 18\", label: \"Docs, live previews\", state: now }\n  - { date: \"Apr 02\", label: \"Registry listed\", state: next }\n---\n::"
+  },
+  {
+   "name": "tree",
+   "tag": "GraphTree",
+   "slug": "graph-tree",
+   "source": "::graph-tree\n---\ntitle: REGISTRY\nnodes:\n  - label: \"registry/default\"\n    children:\n      - label: graph-frame\n        children:\n          - { label: \"graph-frame.tsx\", meta: ui }\n          - { label: \"graph-motion.ts\", meta: lib }\n      - label: graph-tree\n        children:\n          - { label: \"graph-tree.tsx\", meta: ui, accent: true }\n---\n::"
+  },
+  {
+   "name": "gantt",
+   "tag": "GraphGantt",
+   "slug": "graph-gantt",
+   "source": "::graph-gantt\n---\ntitle: LAUNCH\nprogress: 0.58\nticks: [q1, q2, q3, q4]\nitems:\n  - { label: design, start: 0, end: 0.35, complete: 1 }\n  - { label: build, start: 0.2, end: 0.75, complete: 0.55 }\n  - { label: docs, start: 0.55, end: 0.9, complete: 0.2 }\n  - { label: ship, start: 0.85, end: 1, complete: 0 }\n---\n::"
+  },
+  {
+   "name": "board",
+   "tag": "GraphBoard",
+   "slug": "graph-board",
+   "source": "::graph-board\n---\ntitle: ROADMAP\ncolumns:\n  - title: Now\n    items:\n      - label: \"Children for every graph\"\n        state: now\n      - \"Comark parity\"\n  - title: Next\n    items: [Board, Score]\n  - title: Later\n    items:\n      - { label: \"Figma kit\", state: next }\n---\n::"
+  },
+  {
+   "name": "stat",
+   "tag": "GraphStat",
+   "slug": "graph-stat",
+   "source": "::graph-stat\n---\ntitle: \"THIS WEEK\"\nitems:\n  - { value: \"12,400\", label: docs }\n  - { value: \"4,100\", label: copies }\n  - { value: \"860\", label: shipped }\n---\n::"
+  },
+  {
+   "name": "spec",
+   "tag": "GraphSpec",
+   "slug": "graph-spec",
+   "source": "::graph-spec\n---\ntitle: TYPE\nrows:\n  - { label: Family, value: \"Geist Mono\" }\n  - { label: Size, value: \"14 / 21\" }\n  - { label: Tracking, value: \"+0.02em\" }\n  - { label: Figures, value: tabular }\n  - { label: Accent, value: \"--graph-accent\" }\n---\n::"
+  },
+  {
+   "name": "check",
+   "tag": "GraphCheck",
+   "slug": "graph-check",
+   "source": "::graph-check\n---\ntitle: LAUNCH\nitems:\n  - { label: \"freeze tokens\", done: true }\n  - { label: \"ship registry json\", done: true }\n  - { label: \"write the postmortem\", note: \"still open\" }\n---\n::"
+  },
+  {
+   "name": "diff",
+   "tag": "GraphDiff",
+   "slug": "graph-diff",
+   "source": "::graph-diff\n---\ntitle: BUNDLE\nrows:\n  - { label: vendor, value: \"84 kb\" }\n  - { label: app, value: \"31 kb\", sign: add }\n  - { label: sourcemaps, value: \"12 kb\", sign: remove }\nfooter:   label: shipped\n  value: \"103 kb\"\n---\n::"
+  },
+  {
+   "name": "kpi",
+   "tag": "GraphKpi",
+   "slug": "graph-kpi",
+   "source": "::graph-kpi\n---\ntitle: READS\nvalue: \"12,400\"\nlabel: \"this week\"\nhint: \"+18%\"\ndata: [4, 5, 5, 6, 8, 7, 9, 8, 11, 10, 12, 14]\n---\n::"
+  },
+  {
+   "name": "table",
+   "tag": "GraphTable",
+   "slug": "graph-table",
+   "source": "::graph-table\n---\ntitle: \"WHAT THE RESEARCH COST\"\nheaders: [Agent, Tokens, \"Tool calls\", Time]\nalign: [left, right, right, right]\nrows:\n  - [\"Inks and paper\",\"115,207\",\"120\",\"16m\"]\n  - [\"Overprint and drift\",\"135,218\",\"164\",\"16m\"]\n  - [\"Naming the patterns\",\"186,716\",\"112\",\"18m\"]\nfooter: [Total, \"437,141\", \"396\", \"~50m\"]\n---\n::"
+  },
+  {
+   "name": "sheet",
+   "tag": "GraphSheet",
+   "slug": "graph-sheet",
+   "source": "::graph-sheet\n---\ntitle: RFC\nheaders: [Item, Owner, Status]\nalign: [left, left, left]\nsections:\n  - title: Scope\n    rows:\n      - [\"CLI copies files\",\"priya\",\"done\"]\n      - [\"Docs previews\",\"jon\",\"now\"]\n  - title: \"Out of scope\"\n    rows:\n      - [\"npm package\",\"—\",\"later\"]\n      - [\"Figma kit\",\"—\",\"later\"]\n---\n::"
+  },
+  {
+   "name": "compare",
+   "tag": "GraphCompare",
+   "slug": "graph-compare",
+   "source": "::graph-compare\n---\ntitle: PLANS\ncolumns: [Solo, Studio]\nrows:\n  - label: Registry\n    values: [true, true]\n  - label: \"Accent picker\"\n    values: [true, true]\n  - label: \"Private source\"\n    values: [false, true]\n  - label: Price\n    values: [\"$0\", \"$24\"]\n---\n::"
+  },
+  {
+   "name": "matrix",
+   "tag": "GraphMatrix",
+   "slug": "graph-matrix",
+   "source": "::graph-matrix\n---\ntitle: DETECT\ncolumns: [Pos, Neg]\nrows:\n  - label: Pos\n    values: [41, 3]\n  - label: Neg\n    values: [2, 54]\n---\n::"
+  },
+  {
+   "name": "invoice",
+   "tag": "GraphInvoice",
+   "slug": "graph-invoice",
+   "source": "::graph-invoice\n---\ntitle: \"INVOICE 0041\"\nfrom:   name: mdxcn\n  lines: [\"kshv.me\", \"GSTIN 29AXXXXX1234Z5\"]\nto:   name: \"Acme Studio\"\n  lines: [\"14 Market Street\", \"San Francisco, CA\"]\nmeta:\n  - { label: \"No.\", value: \"0041\" }\n  - { label: Issued, value: \"Mar 12, 2026\" }\n  - { label: Due, value: \"Apr 11, 2026\" }\nitems:\n  - { description: \"Design system\", qty: \"1\", rate: \"4,200\", amount: \"4,200\" }\n  - { description: \"Motion pass\", qty: \"1\", rate: \"1,800\", amount: \"1,800\" }\n  - { description: \"Docs rewrite\", qty: \"8h\", rate: \"180\", amount: \"1,440\" }\ntotals:\n  - { label: Subtotal, value: \"7,440\" }\n  - { label: Tax, value: \"0\" }\n  - { label: \"Amount due\", value: \"7,440\" }\nnote: \"Net 30. Wire to the account on file.\"\n---\n::"
+  },
+  {
+   "name": "rank",
+   "tag": "GraphRank",
+   "slug": "graph-rank",
+   "source": "::graph-rank\n---\ntitle: ROUTES\nitems:\n  - { label: \"/docs\", value: 12400 }\n  - { label: \"/install\", value: 4100 }\n  - { label: \"/plot\", value: 860 }\n  - { label: \"/rank\", value: 420 }\n---\n::"
+  },
+  {
+   "name": "funnel",
+   "tag": "GraphFunnel",
+   "slug": "graph-funnel",
+   "source": "::graph-funnel\n---\ntitle: INSTALL\nsteps:\n  - { label: docs, value: 12400, display: \"12,400\" }\n  - { label: copy, value: 4100, display: \"4,100\" }\n  - { label: ship, value: 860, display: \"860\" }\n---\n::"
+  },
+  {
+   "name": "slope",
+   "tag": "GraphSlope",
+   "slug": "graph-slope",
+   "source": "::graph-slope\n---\ntitle: TRAFFIC\nfromLabel: \"2025\"\ntoLabel: \"2026\"\nitems:\n  - { label: docs, from: 8200, to: 12400 }\n  - { label: copy, from: 5100, to: 4100 }\n  - { label: ship, from: 640, to: 860 }\n---\n::"
+  },
+  {
+   "name": "bullet",
+   "tag": "GraphBullet",
+   "slug": "graph-bullet",
+   "source": "::graph-bullet\n---\ntitle: BUDGET\nitems:\n  - { label: Design, value: 42, target: 40 }\n  - { label: Motion, value: 18, target: 24 }\n  - { label: Docs, value: 9, target: 12 }\n---\n::"
+  },
+  {
+   "name": "score",
+   "tag": "GraphScore",
+   "slug": "graph-score",
+   "source": "::graph-score\n---\ntitle: REVIEW\nitems:\n  - { label: Performance, value: 4, max: 5 }\n  - { label: Accessibility, value: 5, max: 5 }\n  - { label: Docs, value: 2.5, max: 5, accent: true }\n---\n::"
+  },
+  {
+   "name": "waterfall",
+   "tag": "GraphWaterfall",
+   "slug": "graph-waterfall",
+   "source": "::graph-waterfall\n---\ntitle: MARGIN\nitems:\n  - { label: Revenue, value: 48 }\n  - { label: Refunds, value: -6 }\n  - { label: Hosting, value: -4 }\n  - { label: Profit, value: 38 }\n---\n::"
+  },
+  {
+   "name": "stack",
+   "tag": "GraphStack",
+   "slug": "graph-stack",
+   "source": "::graph-stack\n---\ntitle: BUNDLE\nrows:\n  - label: marketing\n    segments:\n      - { label: js, value: 48 }\n      - { label: css, value: 22 }\n      - { label: images, value: 30 }\n  - label: docs\n    segments:\n      - { label: js, value: 28 }\n      - { label: css, value: 18 }\n      - { label: images, value: 54 }\n---\n::"
+  },
+  {
+   "name": "spark",
+   "tag": "GraphSpark",
+   "slug": "graph-spark",
+   "source": "::graph-spark\n---\ntitle: LATENCY\ndata: [2, 3, 4, 3, 6, 5, 8, 7, 9, 6, 10, 8]\ncaption: \"last point is the accent\"\n---\n::"
+  },
+  {
+   "name": "plot",
+   "tag": "GraphPlot",
+   "slug": "graph-plot",
+   "source": "::graph-plot\n---\ntitle: P95\ndata: [2, 3, 3, 5, 4, 7, 6, 8, 5, 9, 7, 6]\nlabels: [jan, dec]\n---\n::"
+  },
+  {
+   "name": "meter",
+   "tag": "GraphMeter",
+   "slug": "graph-meter",
+   "source": "::graph-meter\n---\ntitle: SHIPPED\nvalue: 0.67\ncaption: \"characters, not a progress bar\"\n---\n::"
+  },
+  {
+   "name": "waffle",
+   "tag": "GraphWaffle",
+   "slug": "graph-waffle",
+   "source": "::graph-waffle\n---\ntitle: COVERAGE\nvalue: 0.73\ncaption: \"73 of 100 tests green\"\n---\n::"
+  },
+  {
+   "name": "cells",
+   "tag": "GraphCells",
+   "slug": "graph-cells",
+   "source": "::graph-cells\n---\ntitle: \"TWO WAYS TO LEARN\"\nitems:\n  - label: fragments\n    cells:\n      - [1,0,1,0,0]\n      - [0,1,0,1,0]\n      - [1,0,0,0,1]\n  - label: \"a system\"\n    cells:\n      - [1,1,1,1,1]\n      - [1,1,1,1,1]\n      - [1,1,1,1,1]\n---\n::"
+  },
+  {
+   "name": "bars",
+   "tag": "GraphBars",
+   "slug": "graph-bars",
+   "source": "::graph-bars\n---\ntitle: THROUGHPUT\nfrom:   label: before\n  values: [2, 4, 3, 5, 2]\nto:   label: after\n  size: lg\n  values: [2, 4, 3, 5, 2]\n---\n::"
+  },
+  {
+   "name": "heatmap",
+   "tag": "GraphHeatmap",
+   "slug": "graph-heatmap",
+   "source": "::graph-heatmap\n---\ntitle: DEPLOYS\npalette: duo\ncolumns: [\"0\", \"4\", \"8\", \"12\", \"16\", \"20\"]\nrows:\n  - label: Mon\n    values: [0, 1, 4, 8, 6, 1]\n  - label: Tue\n    values: [0, 0, 5, 9, 4, 2]\n  - label: Wed\n    values: [1, 0, 6, 12, 5, 1]\n  - label: Thu\n    values: [0, 2, 4, 7, 8, 3]\n  - label: Fri\n    values: [0, 1, 3, 5, 2, 0]\n  - label: Sat\n    values: [0, 0, 1, 0, 0, 0]\n  - label: Sun\n    values: [0, 0, 0, 1, 0, 0]\n---\n::"
+  },
+  {
+   "name": "activity",
+   "tag": "GraphActivity",
+   "slug": "graph-activity",
+   "source": "::graph-activity\n---\ntitle: SHIPPED\nweekStartsOn: 1\ncaption: \"Jun – Aug\"\ndays:\n  - { date: \"2026-06-01\", count: 3 }\n  - { date: \"2026-06-02\", count: 7 }\n  - { date: \"2026-06-03\", count: 0 }\n  - { date: \"2026-06-04\", count: 12 }\n  - { date: \"2026-06-05\", count: 4 }\n  - { date: \"2026-06-06\", count: 0 }\n  - { date: \"2026-06-07\", count: 0 }\n---\n::"
+  },
+  {
+   "name": "uptime",
+   "tag": "GraphUptime",
+   "slug": "graph-uptime",
+   "source": "::graph-uptime\n---\ntitle: API\nfrom: \"Aug 14\"\nto: \"Aug 27\"\ndays: [ok, ok, ok, ok, ok, degraded, ok, ok, down, down, ok, ok, ok, ok]\n---\n::"
+  },
+  {
+   "name": "calendar",
+   "tag": "GraphCalendar",
+   "slug": "graph-calendar",
+   "source": "::graph-calendar\n---\ntitle: \"SHIP WEEK\"\nyear: 2026\nmonth: 3\nweekStartsOn: 0\nmarks:\n  - { day: 12, accent: true }\n  - { day: 18 }\n---\n::"
+  },
+  {
+   "name": "timer",
+   "tag": "GraphTimer",
+   "slug": "graph-timer",
+   "source": "::graph-timer\n---\ntitle: INCIDENT\nkind: elapsed\nat: \"2026-08-27T08:00:00Z\"\ncaption: api\n---\n::"
+  },
+  {
+   "name": "countdown",
+   "tag": "GraphCountdown",
+   "slug": "graph-countdown",
+   "source": "::graph-countdown\n---\ntitle: FREEZE\nto: \"2027-01-01T00:00:00Z\"\ndone: open\ncaption: \"until launch\"\n---\n::"
+  }
+ ]
+}

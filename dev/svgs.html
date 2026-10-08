@@ -1,0 +1,12 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SVG check</title>
+<style>body{margin:0;padding:24px;background:#fff;font:14px sans-serif} body.dark{background:#0d1117} img{display:block;width:100%;max-width:960px;margin:0 auto 28px}</style></head>
+<body>
+<script>
+const p = new URLSearchParams(location.search)
+if (p.get('theme') === 'dark') document.body.className = 'dark'
+for (const name of (p.get('only') || 'hero,pipeline,syntaxes,catalog,accent,divider').split(',')) {
+  const img = document.createElement('img'); img.src = '../docs/assets/' + name + '-' + (p.get('theme') === 'dark' ? 'dark' : 'light') + '.svg?' + Date.now(); document.body.appendChild(img)
+}
+</script>
+</body></html>

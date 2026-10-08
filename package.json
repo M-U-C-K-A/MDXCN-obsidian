@@ -1,0 +1,45 @@
+{
+  "name": "obsidian-mdxcn",
+  "version": "1.0.0",
+  "description": "mdxcn components, native in Obsidian: framed text figures (gantt, timeline, timers, tables, charts\u2026) rendered from ASCII, MDX or Comark blocks.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "test": "esbuild test/run.ts --bundle --platform=node --format=esm --packages=external --outfile=test/.out/run.mjs --log-level=warning && node test/.out/run.mjs",
+    "version": "node version-bump.mjs && git add manifest.json versions.json",
+    "preview:build": "esbuild dev/preview.ts --bundle --format=iife --alias:obsidian=./dev/obsidian-shim.ts --outfile=dev/.out/preview.js --log-level=warning",
+    "preview": "npm run preview:build && python3 -m http.server 4317",
+    "install-plugin": "npm run build && node scripts/install.mjs",
+    "docs": "node docs/svg/build.mjs && esbuild scripts/docs.ts --bundle --platform=node --format=esm --outfile=scripts/.out/docs.mjs --log-level=warning && node scripts/.out/docs.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "mdx",
+    "mdxcn",
+    "ascii",
+    "diagram",
+    "gantt"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@codemirror/language": "6.11.0",
+    "@codemirror/state": "6.5.0",
+    "@codemirror/view": "6.38.6",
+    "@types/node": "^22.0.0",
+    "builtin-modules": "^4.0.0",
+    "esbuild": "^0.24.0",
+    "obsidian": "1.13.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.6.0",
+    "yaml": "^2.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M-U-C-K-A/MDXCN-obsidian.git"
+  },
+  "homepage": "https://github.com/M-U-C-K-A/MDXCN-obsidian#readme",
+  "author": "Hugo Delacour"
+}

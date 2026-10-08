@@ -1,0 +1,10 @@
+{
+  "id": "mdxcn",
+  "name": "MDXCN",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Framed text figures from mdxcn.dev, native in Obsidian: gantt, timeline, timers, countdowns, tables, charts, callouts and 40 more. Paste the official ASCII, MDX or Comark and it renders.",
+  "author": "Hugo Delacour",
+  "isDesktopOnly": false,
+  "authorUrl": "https://github.com/M-U-C-K-A"
+}

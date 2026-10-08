@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "module": "ESNext",
+    "target": "ES2020",
+    "allowJs": false,
+    "noImplicitAny": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": false,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "lib": ["DOM", "ES2021"]
+  },
+  "include": ["src/**/*.ts"]
+}
